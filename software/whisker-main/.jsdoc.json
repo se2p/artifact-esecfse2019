@@ -1,0 +1,25 @@
+{
+    "source": {
+        "include": ["src"]
+    },
+    "opts": {
+        "destination": "docs",
+        "pedantic": true,
+        "private": true,
+        "readme": "README.md",
+        "recurse": true,
+        "template": "node_modules/ink-docstrap/template"
+    },
+    "plugins": ["plugins/markdown"],
+    "templates": {
+        "includeDate": false,
+        "monospaceLinks": true,
+        "outputSourceFiles": false,
+        "outputSourcePath": false,
+        "systemName": "Whisker",
+        "theme": "simplex",
+        "linenums": true,
+        "collapseSymbols": false,
+        "inverseNav": true
+    }
+}

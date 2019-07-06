@@ -1,0 +1,125 @@
+# project: K6_S14.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: fail
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: skip
+      message: Apple did not fall
+    - id: 8
+      name: Banana Falling Constraint
+      status: fail
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: skip
+      message: Banana did not fall.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: ''
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 22
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 23
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 24
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+    - id: 25
+      name: Timer Game Over Constraint
+      status: fail
+      message: The game must run for at least 20 seconds.
+    - id: 26
+      name: Timer Game Over Message Constraint
+      status: fail
+      message: Bowl must display a message after 30 seconds.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.00 (0/8)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bananas: 0.00 (0/3)
+#     Bowl: 0.00 (0/2)
+#     Apple: 0.00 (0/3)
+

@@ -1,0 +1,29 @@
+id,name,status,message
+1,Variable Initialization Test,pass,
+2,Bowl Initialization Test,fail,Bowl must start at x = 0.
+3,Fruit Initialization Test,pass,
+4,Bowl Movement Test,pass,
+5,Bowl Movement Details Test,fail,Bowl must move in steps of size 10.
+6,Apple Falling Test,pass,
+7,Apple Falling Details Test,fail,Apple must fall with a speed of -5.
+8,Banana Falling Test,pass,
+9,Banana Falling Details Test,fail,Banana must fall with a speed of -7.
+10,Apple Spawn Test,pass,
+11,Apple Spawn Random X Position Test,pass,
+12,Apple Spawn Y Position Test,fail,Apples must spawn at y = 170.
+13,Banana Spawn Test,pass,
+14,Banana Spawn Random X Position Test,pass,
+15,Banana Spawn Y Position Test,fail,Bananas must spawn at y = 170.
+16,Only One Apple Test,pass,
+17,Only One Banana Test,pass,
+18,Banana Fall Delay Test,fail,Banana must not be visible for a second in the beginning.
+19,Banana Ground Delay Test,fail,Banana must not be visible for a second after touching the ground.
+20,Apple Points Test,pass,
+21,Apple Game Over Test,fail,Apple must not move after game is over (should be over).
+22,Apple Game Over Message Test,fail,Apple's game over message must disappear one second after it hit the ground
+23,Banana Bowl Points Test,fail,Banana didn't touch the bowl after 30 seconds.
+24,Banana Ground Points Test,pass,
+25,Banana Ground Message Test,fail,Banana's message must disappear a second after it hit the ground
+26,Timer Tick Test,pass,
+27,Timer Game Over Test,pass,
+28,Timer Game Over Message Test,fail,Bowl must display a message when the time is up.

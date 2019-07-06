@@ -1,0 +1,4739 @@
+# project: K6_S01.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: pass
+      message: ''
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.96 (44/46)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.87 (13/15)
+#     Apple: 1.00 (12/12)
+#     Bananas: 1.00 (19/19)
+
+# project: K6_S02.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.86 (32/37)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 1.00 (4/4)
+#     Bananas: 1.00 (17/17)
+#     Apple: 0.69 (11/16)
+
+# project: K6_S03.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.80 (36/45)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 1.00 (6/6)
+#     Bananas: 0.77 (20/26)
+#     Apple: 0.77 (10/13)
+
+# project: K6_S05.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.92 (45/49)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 0.91 (21/23)
+#     Bananas: 1.00 (16/16)
+#     Bowl: 0.80 (8/10)
+
+# project: K6_S06.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.97 (36/37)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.92 (12/13)
+#     Bananas: 1.00 (13/13)
+#     Apple: 1.00 (11/11)
+
+# project: K6_S10.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.95 (53/56)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.87 (13/15)
+#     Apple: 1.00 (21/21)
+#     Bananas: 0.95 (19/20)
+
+# project: K6_S11.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Score must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.93 (26/28)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 1.00 (11/11)
+#     Bananas: 1.00 (8/8)
+#     Bowl: 0.78 (7/9)
+
+# project: K6_S12.sb3
+TAP version 13
+1..1
+not ok 1 - Test
+  ---
+  severity: fail
+  error:
+    name: AssumptionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Could not find variable time.
+    generatedMessage: false
+  ...
+# summary:
+#   tests: 1
+#   pass: 0
+#   fail: 1
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.00 (0/26)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.00 (0/10)
+#     Apple: 0.00 (0/9)
+#     Bananas: 0.00 (0/7)
+
+# project: K6_S13.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: fail
+      message: Apples must have a size of 50%
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: fail
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: skip
+      message: Banana did not fall.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Apple must not move after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.94 (47/50)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 0.90 (26/29)
+#     Bowl: 1.00 (19/19)
+#     Bananas: 1.00 (2/2)
+
+# project: K6_S14.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: fail
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: skip
+      message: Apple did not fall
+    - id: 8
+      name: Banana Falling Constraint
+      status: fail
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: skip
+      message: Banana did not fall.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: fail
+      message: Bananas must spawn at random x positions.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: skip
+      message: Apple game over could not be checked.
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: skip
+      message: Apple game over message could not be checked.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 1.00 (8/8)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bananas: 1.00 (3/3)
+#     Bowl: 1.00 (2/2)
+#     Apple: 1.00 (3/3)
+
+# project: K6_S15.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: skip
+      message: Apple game over could not be checked.
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: skip
+      message: Apple game over message could not be checked.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.80 (20/25)
+#   individual:
+#     Stage: 0.00 (0/1)
+#     Bowl: 0.67 (4/6)
+#     Apple: 0.89 (8/9)
+#     Bananas: 0.89 (8/9)
+
+# project: K6_S16.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: fail
+      message: Apples must have a size of 50%
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: fail
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: skip
+      message: Apple did not fall
+    - id: 8
+      name: Banana Falling Constraint
+      status: fail
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: skip
+      message: Banana did not fall.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: skip
+      message: Apple game over could not be checked.
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: skip
+      message: Apple game over message could not be checked.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 1.00 (8/8)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 1.00 (8/8)
+#     Apple: NaN (0/0)
+#     Bananas: NaN (0/0)
+
+# project: K6_S17.sb3
+TAP version 13
+1..1
+not ok 1 - Test
+  ---
+  severity: fail
+  error:
+    name: AssumptionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Could not find variable score.
+    generatedMessage: false
+  ...
+# summary:
+#   tests: 1
+#   pass: 0
+#   fail: 1
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.33 (1/3)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 1.00 (1/1)
+#     Bananas: 0.00 (0/2)
+#     Bowl: NaN (0/0)
+
+# project: K6_S18.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.96 (46/48)
+#   individual:
+#     Stage: 0.83 (5/6)
+#     Bananas: 1.00 (14/14)
+#     Bowl: 1.00 (13/13)
+#     Apple: 0.93 (14/15)
+
+# project: K6_S19.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Score must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.86 (32/37)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 1.00 (6/6)
+#     Bananas: 0.93 (14/15)
+#     Bowl: 0.75 (12/16)
+
+# project: K6_S20.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: pass
+      message: ''
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.98 (44/45)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 1.00 (10/10)
+#     Bananas: 1.00 (16/16)
+#     Apple: 0.95 (18/19)
+
+# project: K6_S27.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: fail
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: skip
+      message: Apple did not fall
+    - id: 8
+      name: Banana Falling Constraint
+      status: fail
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: skip
+      message: Banana did not fall.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: skip
+      message: Apple did not touch the ground.
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: skip
+      message: Apple did not touch the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana did not touch the ground.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana did not touch the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.80 (12/15)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bananas: 0.80 (4/5)
+#     Apple: 0.80 (4/5)
+#     Bowl: 0.80 (4/5)
+
+# project: K6_S29.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Score must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.89 (25/28)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 0.73 (8/11)
+#     Bananas: 1.00 (9/9)
+#     Bowl: 1.00 (8/8)
+
+# project: K6_S30.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 1.00 (41/41)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 1.00 (16/16)
+#     Bananas: 1.00 (18/18)
+#     Bowl: 1.00 (7/7)
+
+# project: K6_S31.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 1.00 (33/33)
+#   individual:
+#     Stage: 1.00 (7/7)
+#     Bananas: 1.00 (9/9)
+#     Apple: 1.00 (9/9)
+#     Bowl: 1.00 (8/8)
+
+# project: K6_S33.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display '-8' when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.94 (45/48)
+#   individual:
+#     Stage: 1.00 (5/5)
+#     Bowl: 1.00 (12/12)
+#     Apple: 0.81 (13/16)
+#     Bananas: 1.00 (15/15)
+
+# project: K7_S02.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.74 (43/58)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 1.00 (16/16)
+#     Bananas: 0.50 (12/24)
+#     Apple: 0.83 (15/18)
+
+# project: K7_S03.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.92 (34/37)
+#   individual:
+#     Stage: 1.00 (6/6)
+#     Apple: 0.83 (10/12)
+#     Bananas: 0.92 (11/12)
+#     Bowl: 1.00 (7/7)
+
+# project: K7_S04.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: fail
+      message: Apples must have a size of 50%
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: fail
+      message: Apples must spawn at random x positions.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: fail
+      message: Bananas must spawn at random x positions.
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Score must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.59 (37/63)
+#   individual:
+#     Stage: 0.57 (4/7)
+#     Apple: 0.71 (12/17)
+#     Bowl: 0.60 (9/15)
+#     Bananas: 0.50 (12/24)
+
+# project: K7_S05.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.67 (41/61)
+#   individual:
+#     Stage: 0.57 (8/14)
+#     Bowl: 0.58 (7/12)
+#     Apple: 0.75 (12/16)
+#     Bananas: 0.74 (14/19)
+
+# project: K7_S06.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.85 (35/41)
+#   individual:
+#     Stage: 0.86 (6/7)
+#     Apple: 1.00 (12/12)
+#     Bananas: 0.72 (13/18)
+#     Bowl: 1.00 (4/4)
+
+# project: K7_S07.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: fail
+      message: Apples must have a size of 50%
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: skip
+      message: Apple game over could not be checked.
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: skip
+      message: Apple game over message could not be checked.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.73 (37/51)
+#   individual:
+#     Stage: 0.80 (8/10)
+#     Bowl: 1.00 (10/10)
+#     Apple: 0.60 (9/15)
+#     Bananas: 0.63 (10/16)
+
+# project: K7_S08.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.87 (33/38)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 0.77 (10/13)
+#     Bananas: 0.92 (12/13)
+#     Bowl: 0.92 (11/12)
+#     Figur1: NaN (0/0)
+
+# project: K7_S10.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.95 (36/38)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 1.00 (12/12)
+#     Bananas: 0.89 (17/19)
+#     Bowl: 1.00 (7/7)
+
+# project: K7_S11.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: fail
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: skip
+      message: Too few bananas spawned.
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: skip
+      message: Banana ground points could not be checked.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: skip
+      message: Banana ground message could not be checked.
+    - id: 26
+      name: Timer Tick Constraint
+      status: skip
+      message: Timer did not tick at all.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.71 (15/21)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 0.89 (8/9)
+#     Bananas: 0.55 (6/11)
+#     Bowl: 1.00 (1/1)
+
+# project: K7_S12.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: fail
+      message: Timer must start at 30
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.95 (39/41)
+#   individual:
+#     Stage: 1.00 (5/5)
+#     Apple: 1.00 (13/13)
+#     Bananas: 1.00 (13/13)
+#     Bowl: 0.80 (8/10)
+
+# project: K7_S14.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.97 (39/40)
+#   individual:
+#     Stage: 0.86 (6/7)
+#     Apple: 1.00 (13/13)
+#     Bowl: 1.00 (6/6)
+#     Bananas: 1.00 (14/14)
+
+# project: K7_S15.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move right when right arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: pass
+      message: ''
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: pass
+      message: ''
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.95 (40/42)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.82 (9/11)
+#     Apple: 1.00 (15/15)
+#     Bananas: 1.00 (16/16)
+
+# project: K7_S16.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move right with a speed of 10 when right arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: pass
+      message: ''
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.88 (38/43)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bananas: 0.93 (13/14)
+#     Bowl: 0.78 (7/9)
+#     Apple: 0.90 (18/20)
+
+# project: K7_S17.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: pass
+      message: ''
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: pass
+      message: ''
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must not fall for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Time must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.96 (50/52)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.88 (14/16)
+#     Apple: 1.00 (14/14)
+#     Bananas: 1.00 (22/22)
+
+# project: K7_S18.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: fail
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: skip
+      message: Too few apples spawned.
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 1.00 (40/40)
+#   individual:
+#     Stage: 1.00 (7/7)
+#     Bowl: 1.00 (8/8)
+#     Apple: 1.00 (13/13)
+#     Bananas: 1.00 (12/12)
+
+# project: K7_S19.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: skip
+      message: Apple points could not be checked.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: pass
+      message: ''
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: pass
+      message: ''
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: fail
+      message: Time must only tick down.
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.88 (38/43)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.91 (10/11)
+#     Bananas: 1.00 (13/13)
+#     Apple: 0.79 (15/19)
+
+# project: K7_S20.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: pass
+      message: ''
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: pass
+      message: ''
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must be invisible for the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: fail
+      message: Banana must be invisible for a second after it spawned.
+    - id: 20
+      name: Apple Points Constraint
+      status: fail
+      message: Apples must give 5 points when they hit the bowl.
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Bananas must not move after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: fail
+      message: Apple must display a message if it hits the ground.
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: fail
+      message: Bananas must give 8 points when they hit the bowl.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: fail
+      message: Bananas must subtract 8 points when they hit the floor.
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: fail
+      message: Banana must display a message when it hits the ground.
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.94 (34/36)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 0.86 (12/14)
+#     Apple: 1.00 (11/11)
+#     Bananas: 1.00 (11/11)
+
+# project: K7_S24.sb3
+TAP version 13
+1..1
+not ok 1 - Test
+  ---
+  severity: fail
+  error:
+    name: AssumptionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Could not find variable time.
+    generatedMessage: false
+  ...
+# summary:
+#   tests: 1
+#   pass: 0
+#   fail: 1
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.09 (3/34)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl2: 0.13 (1/8)
+#     Apple: 0.08 (1/13)
+#     Bananas: 0.08 (1/13)
+
+# project: K7_S26.sb3
+TAP version 13
+1..1
+ok 1 - Test
+  ---
+  log:
+    - id: 1
+      name: Timer Initialization Constraint
+      status: pass
+      message: ''
+    - id: 2
+      name: Bowl Initialization Constraint
+      status: pass
+      message: ''
+    - id: 3
+      name: Fruit Size Constraint
+      status: pass
+      message: ''
+    - id: 4
+      name: Bowl Movement Constraint
+      status: fail
+      message: Bowl must move left when left arrow key is pressed.
+    - id: 5
+      name: Bowl Movement Details Constraint
+      status: fail
+      message: Bowl must move left with a speed of 10 when left arrow key is pressed.
+    - id: 6
+      name: Apple Falling Constraint
+      status: pass
+      message: ''
+    - id: 7
+      name: Apple Falling Details
+      status: fail
+      message: Apple must fall down in steps of size 5.
+    - id: 8
+      name: Banana Falling Constraint
+      status: pass
+      message: ''
+    - id: 9
+      name: Banana Falling Details
+      status: fail
+      message: Banana must fall down in steps of size 7.
+    - id: 10
+      name: Apple Spawn Constraint
+      status: pass
+      message: ''
+    - id: 11
+      name: Apple Spawn Y Position Constraint
+      status: fail
+      message: Apples must spawn at y = 170.
+    - id: 12
+      name: Apple Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 13
+      name: Banana Spawn Constraint
+      status: pass
+      message: ''
+    - id: 14
+      name: Banana Spawn Y Position Constraint
+      status: fail
+      message: Bananas must spawn at y = 170.
+    - id: 15
+      name: Banana Spawn Random X Position Constraint
+      status: pass
+      message: ''
+    - id: 16
+      name: Only One Apple Constraint
+      status: pass
+      message: ''
+    - id: 17
+      name: Only One Banana Constraint
+      status: pass
+      message: ''
+    - id: 18
+      name: Banana Beginning Delay Constraint
+      status: fail
+      message: Banana must not fall in the first second.
+    - id: 19
+      name: Banana Respawn Delay Constraint
+      status: skip
+      message: No banana fell to the ground before game over
+    - id: 20
+      name: Apple Points Constraint
+      status: pass
+      message: ''
+    - id: 21
+      name: Apple Game Over Constraint
+      status: fail
+      message: Score must not change after game is over (should be over).
+    - id: 22
+      name: Apple Game Over Message Constraint
+      status: pass
+      message: ''
+    - id: 23
+      name: Banana Bowl Points Constraint
+      status: skip
+      message: Banana bowl points could not be checked.
+    - id: 24
+      name: Banana Ground Points Constraint
+      status: pass
+      message: ''
+    - id: 25
+      name: Banana Ground Message Constraint
+      status: pass
+      message: ''
+    - id: 26
+      name: Timer Tick Constraint
+      status: pass
+      message: ''
+  ...
+# summary:
+#   tests: 1
+#   pass: 1
+#   fail: 0
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.93 (42/45)
+#   individual:
+#     Stage: NaN (0/0)
+#     Apple: 1.00 (14/14)
+#     Bowl: 0.78 (7/9)
+#     Bananas: 0.95 (21/22)
+
+# project: K7_S27.sb3
+TAP version 13
+1..1
+not ok 1 - Test
+  ---
+  severity: fail
+  error:
+    name: AssumptionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Could not find sprite bowl.
+    generatedMessage: false
+  ...
+# summary:
+#   tests: 1
+#   pass: 0
+#   fail: 1
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.15 (4/26)
+#   individual:
+#     Stage: NaN (0/0)
+#     Figur2: 0.00 (0/4)
+#     Figur4: NaN (0/0)
+#     Bananas: 0.20 (2/10)
+#     Apple: 0.17 (2/12)
+

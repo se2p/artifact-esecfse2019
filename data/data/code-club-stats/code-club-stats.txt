@@ -1,0 +1,96 @@
+# project: Archery.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":2,"scripts":3,"blocks":21}
+
+# project: Balloons.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":2,"scripts":4,"blocks":26}
+
+# project: Beat The Goalie.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":3,"scripts":6,"blocks":30}
+
+# project: Boat Race.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":3,"scripts":3,"blocks":27}
+
+# project: Brain Game.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":true}
+[Count Blocks] {"sprites":4,"scripts":19,"blocks":76}
+
+# project: Catch The Dots.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":5,"scripts":11,"blocks":82}
+
+# project: Chat Bot.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":true}
+[Count Blocks] {"sprites":2,"scripts":2,"blocks":26}
+
+# project: Clone Wars.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":7,"scripts":17,"blocks":76}
+
+# project: Create Your Own World.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":13,"scripts":26,"blocks":165}
+
+# project: Dodgeball.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":5,"scripts":10,"blocks":78}
+
+# project: Ghostbusters.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":5,"scripts":11,"blocks":58}
+
+# project: Green Your City.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":7,"scripts":8,"blocks":52}
+
+# project: Lost In Space.sb3
+[Detect Inputs] {"mouse":false,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":6,"scripts":4,"blocks":24}
+
+# project: Memory.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":true}
+[Count Blocks] {"sprites":6,"scripts":11,"blocks":58}
+
+# project: Moonhack Scratch 2017.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":3,"scripts":4,"blocks":27}
+
+# project: Poetry Generator.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":true}
+[Count Blocks] {"sprites":4,"scripts":2,"blocks":18}
+
+# project: Rock Band.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":5,"scripts":6,"blocks":18}
+
+# project: Snowball Fight.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":4,"scripts":7,"blocks":37}
+
+# project: Space Junk.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":8,"scripts":13,"blocks":68}
+
+# project: Sprint.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":5,"scripts":9,"blocks":78}
+
+# project: Synchronised Swimming.sb3
+[Detect Inputs] {"mouse":false,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":2,"scripts":7,"blocks":23}
+
+# project: Tech Toys.sb3
+[Detect Inputs] {"mouse":true,"keyboard":true,"text":false}
+[Count Blocks] {"sprites":9,"scripts":5,"blocks":25}
+
+# project: Username Generator.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":3,"scripts":2,"blocks":5}
+
+# project: Paint Box.sb3
+[Detect Inputs] {"mouse":true,"keyboard":false,"text":false}
+[Count Blocks] {"sprites":9,"scripts":14,"blocks":42}
+

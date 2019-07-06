@@ -1,0 +1,27 @@
+id,name,status,message
+1,Timer Initialization Constraint,pass,
+2,Bowl Initialization Constraint,pass,
+3,Fruit Size Constraint,pass,
+4,Bowl Movement Constraint,pass,
+5,Bowl Movement Details Constraint,pass,
+6,Apple Falling Constraint,pass,
+7,Apple Falling Details,pass,
+8,Banana Falling Constraint,pass,
+9,Banana Falling Details,pass,
+10,Apple Spawn Constraint,pass,
+11,Apple Spawn Random X Position Constraint,pass,
+12,Apple Spawn Y Position Constraint,pass,
+13,Banana Spawn Constraint,pass,
+14,Banana Spawn Random X Position Constraint,pass,
+15,Banana Spawn Y Position Constraint,pass,
+16,Only One Apple Constraint,pass,
+17,Only One Banana Constraint,pass,
+18,Banana Beginning Delay Constraint,fail,Banana must not fall in the first second.
+19,Banana Respawn Delay Constraint,fail,
+20,Apple Points Constraint,fail,Apples must give 5 points when they hit the bowl.
+21,Banana Bowl Points Constraint,skip,Banana bowl points could not be checked.
+22,Banana Ground Points Constraint,pass,
+23,Banana Ground Message Constraint,pass,
+24,Timer Tick Constraint,pass,
+25,Timer Game Over Constraint,fail,Score must not change after game is over (should be over).
+26,Timer Game Over Message Constraint,pass,

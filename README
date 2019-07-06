@@ -1,0 +1,22 @@
+# Artifact Description
+
+Artifact for the paper 
+
+    "Testing Scratch Programs Automatically"
+
+by the authors
+
+    Andreas Stahlbauer, Marvin Kreis, and Gordon Fraser.
+
+This artifact consists of two parts:
+    
+    1) [Software] The software Whisker, a framework for testing 
+        Scratch programs automatically. It can be found in the 
+        folder ./software/. The file ./software/README.md provides 
+        more details on how to use this part of the artifact.
+
+    2) [Data] The data and scripts to reproduce the results of
+        our empirical study on testing Scratch programs 
+        automatically and its application for automated grading. 
+        The file ./data/README.md provides more details.
+

@@ -1,0 +1,27 @@
+id,name,status,message
+1,Timer Initialization Constraint,pass,
+2,Bowl Initialization Constraint,pass,
+3,Fruit Size Constraint,pass,
+4,Bowl Movement Constraint,fail,Bowl must move left when left arrow key is pressed.
+5,Bowl Movement Details Constraint,fail,Bowl must move left with a speed of 10 when left arrow key is pressed.
+6,Apple Falling Constraint,pass,
+7,Apple Falling Details,fail,Apple must fall down in steps of size 5.
+8,Banana Falling Constraint,pass,
+9,Banana Falling Details,fail,Banana must fall down in steps of size 7.
+10,Apple Spawn Constraint,fail,
+11,Apple Spawn Y Position Constraint,skip,Too few apples spawned.
+12,Apple Spawn Random X Position Constraint,skip,Too few apples spawned.
+13,Banana Spawn Constraint,pass,
+14,Banana Spawn Y Position Constraint,fail,Bananas must spawn at y = 170.
+15,Banana Spawn Random X Position Constraint,pass,
+16,Only One Apple Constraint,skip,Too few apples spawned.
+17,Only One Banana Constraint,pass,
+18,Banana Beginning Delay Constraint,fail,Banana must not fall in the first second.
+19,Banana Respawn Delay Constraint,fail,Banana must be invisible for a second after it spawned.
+20,Apple Points Constraint,skip,Apple points could not be checked.
+21,Apple Game Over Constraint,pass,
+22,Apple Game Over Message Constraint,fail,Apple must display a message if it hits the ground.
+23,Banana Bowl Points Constraint,skip,Banana bowl points could not be checked.
+24,Banana Ground Points Constraint,pass,
+25,Banana Ground Message Constraint,fail,Banana must display a message when it hits the ground.
+26,Timer Tick Constraint,pass,

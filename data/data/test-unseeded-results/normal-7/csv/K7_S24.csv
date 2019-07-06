@@ -1,0 +1,29 @@
+id,name,status,message
+1,Variable Initialization Test,fail,Could not find variable time.
+2,Bowl Initialization Test,pass,
+3,Fruit Initialization Test,pass,
+4,Bowl Movement Test,pass,
+5,Bowl Movement Details Test,pass,
+6,Apple Falling Test,fail,Apple must appear on the top of the screen after 5 seconds.
+7,Apple Falling Details Test,fail,Apple must appear on the top of the screen after 5 seconds.
+8,Banana Falling Test,fail,Banana must appear on the top of the screen after 5 seconds.
+9,Banana Falling Details Test,fail,Banana must appear on the top of the screen after 5 seconds.
+10,Apple Spawn Test,fail,At least three Apples must have spawned after 30 seconds.
+11,Apple Spawn Random X Position Test,fail,At least three Apples must have spawned after 30 seconds.
+12,Apple Spawn Y Position Test,fail,At least three Apples must have spawned after 30 seconds.
+13,Banana Spawn Test,fail,At least three Bananas must have spawned after 30 seconds.
+14,Banana Spawn Random X Position Test,fail,At least three Bananas must have spawned after 30 seconds.
+15,Banana Spawn Y Position Test,fail,At least three Bananas must have spawned after 30 seconds.
+16,Only One Apple Test,fail,At least three Apples must have spawned after 30 seconds.
+17,Only One Banana Test,fail,At least three Bananas must have spawned after 30 seconds.
+18,Banana Fall Delay Test,fail,Banana must not be visible for a second in the beginning.
+19,Banana Ground Delay Test,fail,Banana didn't touch the ground in 30 seconds.
+20,Apple Points Test,fail,An apple must appear on the top of the screen after 5 seconds.
+21,Apple Game Over Test,fail,An apple must appear on the top of the screen after five seconds.
+22,Apple Game Over Message Test,fail,An apple must appear on the top of the screen after five seconds.
+23,Banana Bowl Points Test,fail,Apple must not touch the ground during this test.
+24,Banana Ground Points Test,fail,Apple must not touch the ground during this test.
+25,Banana Ground Message Test,fail,Apple must not touch the ground during this test.
+26,Timer Tick Test,fail,Could not find variable time.
+27,Timer Game Over Test,fail,Could not find variable time.
+28,Timer Game Over Message Test,fail,Bowl must display a message when the time is up.

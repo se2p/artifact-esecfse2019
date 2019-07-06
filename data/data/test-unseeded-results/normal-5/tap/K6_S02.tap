@@ -1,0 +1,197 @@
+# project: K6_S02.sb3
+TAP version 13
+1..28
+not ok 1 - Variable Initialization Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Time must start at 30 seconds.
+    generatedMessage: false
+  ...
+not ok 2 - Bowl Initialization Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: 52
+    expected: 0
+    operator: ==
+    message: Bowl must start at x = 0.
+    generatedMessage: false
+  ...
+ok 3 - Fruit Initialization Test
+ok 4 - Bowl Movement Test
+not ok 5 - Bowl Movement Details Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Bowl must move in steps of size 10.
+    generatedMessage: false
+    constraint: '[no name]'
+  ...
+ok 6 - Apple Falling Test
+ok 7 - Apple Falling Details Test
+ok 8 - Banana Falling Test
+not ok 9 - Banana Falling Details Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Banana must fall with a speed of -7.
+    generatedMessage: false
+    constraint: '[no name]'
+  ...
+ok 10 - Apple Spawn Test
+ok 11 - Apple Spawn Random X Position Test
+ok 12 - Apple Spawn Y Position Test
+ok 13 - Banana Spawn Test
+ok 14 - Banana Spawn Random X Position Test
+not ok 15 - Banana Spawn Y Position Test
+  ---
+  severity: fail
+  error:
+    name: AssumptionError
+    actual: 2
+    expected: 3
+    operator: '>='
+    message: At least three Bananas must have spawned after 30 seconds.
+    generatedMessage: false
+  ...
+ok 16 - Only One Apple Test
+not ok 17 - Only One Banana Test
+  ---
+  severity: fail
+  error:
+    name: AssumptionError
+    actual: 0
+    expected: 3
+    operator: '>='
+    message: At least three Bananas must have spawned after 30 seconds.
+    generatedMessage: false
+  ...
+not ok 18 - Banana Fall Delay Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Banana must not be visible for a second in the beginning.
+    generatedMessage: false
+    constraint: '[no name]'
+  ...
+not ok 19 - Banana Ground Delay Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Banana must not be visible for a second after touching the ground.
+    generatedMessage: false
+    constraint: '[no name]'
+  ...
+not ok 20 - Apple Points Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: 1
+    expected: 5
+    operator: ==
+    message: Apple must give 5 points when it touches the bowl.
+    generatedMessage: false
+  ...
+ok 21 - Apple Game Over Test
+not ok 22 - Apple Game Over Message Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Apple's game over message must disappear one second after it hit the ground
+    generatedMessage: false
+  ...
+not ok 23 - Banana Bowl Points Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: 2
+    expected: 9
+    operator: ==
+    message: Banana must give 8 points when it touches the bowl.
+    generatedMessage: false
+  log:
+    - Apple touched the bowl before the banana touched the bowl.
+  ...
+ok 24 - Banana Ground Points Test
+  ---
+  log:
+    - Apple touched the bowl before the banana touched the ground.
+  ...
+not ok 25 - Banana Ground Message Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Banana's message must disappear a second after it hit the ground
+    generatedMessage: false
+  log:
+    - Apple touched the bowl before the banana touched the ground.
+  ...
+not ok 26 - Timer Tick Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: 38
+    expected: 37
+    operator: ==
+    message: Time must decrease by one every second.
+    generatedMessage: false
+  ...
+ok 27 - Timer Game Over Test
+not ok 28 - Timer Game Over Message Test
+  ---
+  severity: fail
+  error:
+    name: AssertionError
+    actual: false
+    expected: true
+    operator: ok
+    message: Bowl must display a message when the time is up.
+    generatedMessage: false
+  ...
+# summary:
+#   tests: 28
+#   pass: 14
+#   fail: 14
+#   error: 0
+#   skip: 0
+# coverage:
+#   combined: 0.70 (26/37)
+#   individual:
+#     Stage: NaN (0/0)
+#     Bowl: 1.00 (4/4)
+#     Bananas: 0.65 (11/17)
+#     Apple: 0.69 (11/16)
+

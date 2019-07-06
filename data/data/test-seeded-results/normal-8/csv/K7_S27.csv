@@ -1,0 +1,29 @@
+id,name,status,message
+1,Variable Initialization Test,fail,Time must start at 30 seconds.
+2,Bowl Initialization Test,fail,Could not find sprite bowl.
+3,Fruit Initialization Test,fail,Apple must have a size of 50%.
+4,Bowl Movement Test,fail,Could not find sprite bowl.
+5,Bowl Movement Details Test,fail,Could not find sprite bowl.
+6,Apple Falling Test,fail,Could not find sprite bowl.
+7,Apple Falling Details Test,fail,Could not find sprite bowl.
+8,Banana Falling Test,fail,Could not find sprite bowl.
+9,Banana Falling Details Test,fail,Could not find sprite bowl.
+10,Apple Spawn Test,fail,Could not find sprite bowl.
+11,Apple Spawn Random X Position Test,fail,Could not find sprite bowl.
+12,Apple Spawn Y Position Test,fail,Could not find sprite bowl.
+13,Banana Spawn Test,fail,Could not find sprite bowl.
+14,Banana Spawn Random X Position Test,fail,Could not find sprite bowl.
+15,Banana Spawn Y Position Test,fail,Could not find sprite bowl.
+16,Only One Apple Test,fail,Could not find sprite bowl.
+17,Only One Banana Test,fail,Could not find sprite bowl.
+18,Banana Fall Delay Test,fail,Could not find sprite bowl.
+19,Banana Ground Delay Test,fail,Could not find sprite bowl.
+20,Apple Points Test,fail,Could not find sprite bowl.
+21,Apple Game Over Test,fail,Could not find sprite bowl.
+22,Apple Game Over Message Test,fail,Could not find sprite bowl.
+23,Banana Bowl Points Test,fail,Could not find sprite bowl.
+24,Banana Ground Points Test,fail,Could not find sprite bowl.
+25,Banana Ground Message Test,fail,Could not find sprite bowl.
+26,Timer Tick Test,fail,Could not find sprite bowl.
+27,Timer Game Over Test,fail,Could not find sprite bowl.
+28,Timer Game Over Message Test,fail,Could not find sprite bowl.

@@ -1,0 +1,10 @@
+With this artifact submission, we apply for the badges 
+    * "Reusable" 
+    * and "Available".
+
+Our artifact provides both data and software. The data can
+be used to reproduce our results. The software provides
+a framework for testing Scratch programs automatically that 
+are written in the Scratch programming language, which is
+a central contribution of our work---reviewers even asked
+for making the implementation of this framework available.
