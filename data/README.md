@@ -24,7 +24,7 @@ The replication package is structured into two main directories:
 * 'data/code-club-stats/'
     block counts and input methods of the used Code Club projects
 
-* 'data/coverage`/Users/stahlbau/uni/research/papers/testing-scratch-paper/artifact-submission/README
+* 'data/coverage`
     code for measuring the coverage of automated input generation
 
 * 'data/coverage-results/'
